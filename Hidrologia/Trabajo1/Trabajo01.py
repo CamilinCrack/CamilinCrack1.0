@@ -20,6 +20,7 @@ registro["Valor"] = registro.Valor.astype(float)
 
 caudal_promedio = registro.groupby(pd.PeriodIndex(registro.Fecha, freq="M")).mean()
 caudal_matrix = np.resize(caudal_promedio, (31, 12))
+#asasasasas
 caudal_matrix = pd.DataFrame(data=caudal_matrix)
 #caudal_matrix.iloc[0] = ("N", "N", "N", "N", "N", "N", "N", "N")
 #
